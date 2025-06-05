@@ -2,10 +2,11 @@
   "name": "Flutter + Android SDK",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
   "features": {
-    // Installs latest stable Flutter SDK
+    // Installs the latest stable Flutter SDK
     "ghcr.io/devcontainers/features/flutter:1": {},
-    // Installs command-line Android SDK (build-tools 34)
+    // Installs command-line Android SDK (build-tools 34) for 'flutter build apk'
     "ghcr.io/devcontainers/features/android-sdk:1": { "version": "34.0.0" }
   },
+  // Runs automatically after the container is built
   "postCreateCommand": "flutter doctor -v"
 }
